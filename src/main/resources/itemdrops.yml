@@ -1,0 +1,22 @@
+# ╔══════════════════════════════════════════════════════════════╗
+# ║                      Hologram Settings                                          ║
+# ╚══════════════════════════════════════════════════════════════╝
+# The floating text above private drops. Only visible to viewers.
+# The hologram will strictly display these 2 lines.
+# Placeholders:
+#   %item% - The item name (colored based on settings below)
+#   %time% - The remaining time in seconds
+
+hologram-line-1: "%item%"
+hologram-line-2: "&aTime: %time%s"
+
+# Default color for items not listed below.
+default-color: "&f"
+
+# Specific colors for item materials.
+item-colors:
+  DIAMOND: "&b"
+  NETHERITE_INGOT: "&5"
+  GOLD_INGOT: "&e"
+  IRON_INGOT: "&f"
+  EMERALD: "&a"

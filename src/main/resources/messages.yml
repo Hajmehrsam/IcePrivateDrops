@@ -1,0 +1,33 @@
+prefix: "&8[&6IcePrivateDrops&8] &6» "
+
+reload: "&aReloading configuration..."
+no-permission: "&cYou do not have permission to use this command."
+config-reloaded: "&aConfiguration and messages reloaded successfully."
+item-private: "&7Your dropped item is now &bprivate &7for &b%time% &7seconds."
+item-public: "&eYour dropped item is now &apublic&e."
+unknown-command: "&cUnknown subcommand. Use &e/iceprivatedrops help&c."
+help: |-
+  &b&lIcePrivateDrops &7- Commands
+  &e/iceprivatedrops reload &7- Reload configuration and messages.
+  &e/iceprivatedrops help &7- Show this help message.
+  &e/privatedrops friend invite <name> &7- Send a friend request.
+  &e/privatedrops friend accept &7- Accept a friend request.
+  &e/privatedrops friend deny &7- Deny a friend request.
+
+# Friend System Messages | <New>
+friend-usage: "&cUsage: /privatedrops friend <invite|accept|deny> [player]"
+friend-invite-sent: "&aFriend invite sent to &e%target%&a."
+friend-invite-received: "&eYou received a friend request from &a%sender%&e. Use &a/privatedrops friend accept &eor &c/privatedrops friend deny&e. (Expires in 30s)"
+friend-accept: "&aYou are now friends with &e%target%&a!"
+friend-accept-notify: "&aYou are now friends with &e%target%&a!"
+friend-deny: "&cYou denied the friend request from &e%sender%&c."
+friend-request-denied: "&cYour friend request to &e%target%&c was denied."
+friend-expired-sender: "&cYour friend request to &e%target%&c has expired."
+friend-expired-target: "&cFriend request from &e%sender%&c has expired."
+friend-already-friends: "&cYou are already friends with this player."
+friend-not-online: "&cThat player is not online."
+friend-no-request: "&cYou have no pending friend requests."
+friend-self: "&cYou cannot invite yourself."
+
+# Update Checker
+update-available: "&eA new update is available! &7(v%version%)\n&eDownload it at: &fhttps://www.spigotmc.org/resources/137354/"

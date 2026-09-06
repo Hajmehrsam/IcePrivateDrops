@@ -1,0 +1,48 @@
+# ╔══════════════════════════════════════════════════════════════╗
+# ║                       IcePrivateDrops                                           ║
+# ║               Developed With 💗 By IceDevelopment                              ║
+# ╚══════════════════════════════════════════════════════════════╝
+
+# Check for updates on startup and notify admins when they join.
+check-for-updates: true
+
+# How long (in seconds) a dropped item stays private to its owner.
+# After this period the item becomes public for everyone.
+private-time: 30
+enable-glow: true
+glow-color: AQUA
+friend-glow-color: GREEN # <New>
+
+affect-player-drop: true
+affect-death-drop: false
+affect-block-break-drop: false
+affect-mob-drop: false
+affect-container-drop: false
+
+# Worlds where IcePrivateDrops should NOT operate.
+ignored-worlds:
+  - lobby
+  - spawn
+
+# ╔══════════════════════════════════════════════════════════════╗
+# ║                        Sound System                                             ║ <Updated>
+# ╚══════════════════════════════════════════════════════════════╝
+# Sounds use Bukkit Sound enum names. Use "NONE" to disable.
+sounds:
+  # Played to the owner/friends when the item is dropped.
+  drop-sound: ENTITY_ITEM_PICKUP
+  drop-volume: 0.6
+  drop-pitch: 1.2
+  
+  # Played to the owner/friends when the item is picked up.
+  pickup-sound: BLOCK_NOTE_BLOCK_PLING
+  pickup-volume: 0.8
+  pickup-pitch: 1.0
+  
+  # Played to everyone when the item becomes public.
+  public-sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  public-volume: 0.7
+  public-pitch: 1.2
+
+# Visual effects when an item becomes public.
+enable-particles: true

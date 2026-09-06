@@ -1,0 +1,25 @@
+name: IcePrivateDrops
+version: '${project.version}'
+main: com.hajmehrsam.iceprivatedrops.IcePrivateDrops
+api-version: '1.20'
+author: Hajmehrsam
+description: Make dropped items private to their owner temporarily.
+depend: [PlaceholderAPI]
+
+commands:
+  iceprivatedrops:
+    description: Main command for IcePrivateDrops.
+    usage: /iceprivatedrops <reload|help|friend>
+    aliases:
+      - ipd
+      - icedrops
+      - privatedrops
+    permission: iceprivatedrops.admin
+
+permissions:
+  iceprivatedrops.admin:
+    description: Allows managing the plugin (reload, etc).
+    default: op
+  iceprivatedrops.bypass:
+    description: Allows seeing and picking up every private drop.
+    default: op
